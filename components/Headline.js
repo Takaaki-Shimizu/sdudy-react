@@ -1,6 +1,6 @@
 import styles from "../styles/Home.module.css";
 
-export default function Headline({ title, page }) {
+export function Headline({ title, page }) {
   return (
     <div>
       <h1 className={styles.title}>{title}</h1>
