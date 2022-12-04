@@ -1,12 +1,12 @@
 import styles from "../styles/Home.module.css";
 
-export function Headline({ title, page }) {
+export function Headline(props) {
   return (
     <div>
-      <h1 className={styles.title}>{title}</h1>
+      <h1 className={styles.title}>{props.page}</h1>
 
       <p className={styles.description}>
-        Get started by editing <code className={styles.code}>{page}</code>
+        Get started by editing {props.children}
       </p>
     </div>
   );
