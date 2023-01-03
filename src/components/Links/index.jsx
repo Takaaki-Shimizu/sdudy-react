@@ -1,7 +1,7 @@
 import { useCallback, useState } from "react";
 import classes from "src/components/Links/Links.module.css";
 
-export function Links({ items }) {
+export const Links = ({ items }) => {
   return (
     <div className={classes.container}>
       <div className={classes.grid}>
@@ -18,4 +18,4 @@ export function Links({ items }) {
       </div>
     </div>
   );
-}
+};
