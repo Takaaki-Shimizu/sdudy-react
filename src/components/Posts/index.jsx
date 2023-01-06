@@ -23,6 +23,8 @@ export const Posts = () => {
     getPosts();
   }, [getPosts]);
 
+  console.log("foo");
+
   if (loading) {
     return <div>ローディング中</div>;
   }
